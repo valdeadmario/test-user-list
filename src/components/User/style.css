@@ -1,0 +1,47 @@
+.user-card {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.user-card:first-child {
+  margin-top: 2.3rem;
+}
+
+.identificator {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: auto;
+
+  color: #444;
+  outline: none;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: block;
+  padding: 1rem;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.1);
+  width: 85%;
+}
+
+.title:hover {
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.main-info {
+  display: flex;
+  align-items: center;
+}
