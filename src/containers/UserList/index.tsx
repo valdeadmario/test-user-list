@@ -37,7 +37,6 @@ const UserList = () => {
       )
     );
   }, [currentPage, items]);
-
   if (isLoading) {
     return <Spinner />;
   }
