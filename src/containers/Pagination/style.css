@@ -1,19 +1,28 @@
 .pagination {
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 20px;
 }
 .pagination span {
   cursor: pointer;
-  color: black;
-  float: left;
+  color: #444;
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color 0.3s;
   border: 1px solid #ddd;
+  margin-right: 2px;
+}
+
+.pagination span:hover {
+  background: #ddd;
 }
 
 .pagination span.active {
-  background-color: #0099ff;
+  background-color: #444;
   color: white;
-  border: 1px solid #0099ff;
+  border: 1px solid #444;
 }
