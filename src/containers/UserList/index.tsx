@@ -7,6 +7,9 @@ import { UserType } from "../../types/user.type";
 
 import User from "../../components/User";
 import Pagination from "../Pagination";
+import Spinner from "../../components/Spinner";
+
+import "./style.css";
 
 const ELEMENT_OF_PAGE = 5;
 
@@ -35,9 +38,13 @@ const UserList = () => {
     );
   }, [currentPage, items]);
 
+  if (isLoading) {
+    return <Spinner />;
+  }
+
   return (
-    <div>
-      <ul>
+    <div className="user-container">
+      <ul className="user-list">
         {displayItems.map((user: UserType) => (
           <User user={user} key={`user-${user.id}`} />
         ))}
