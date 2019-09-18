@@ -1,0 +1,27 @@
+.header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 18px -5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #888;
+  font-size: 1.5rem;
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  user-select: none;
+  transition: color 0.5s;
+}
+
+.logo:hover {
+  color: #444;
+}
